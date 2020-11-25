@@ -1,0 +1,18 @@
+body{
+  color: white;
+  /* font-family: 'Fira Sans', sans-serif; */
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero-container,
+.education-container{
+  background: #1F2233;
+}
+.my-skills-container,
+.work-experience-container{
+  background: #24283D;
+}
+
+hr{
+  color: white;
+}
