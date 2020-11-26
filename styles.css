@@ -2,15 +2,66 @@ body{
   color: white;
   /* font-family: 'Fira Sans', sans-serif; */
   font-family: 'Roboto', sans-serif;
+  margin: 0;
 }
 
-.hero-container,
-.education-container{
-  background: #1F2233;
+.container{
+  max-width: 1502px;
+  margin: 0 auto;
 }
-.my-skills-container,
-.work-experience-container{
+
+.body-grid-container{
+  display: grid;
+  grid-auto-flow: row;
+  /* grid-template-columns: minmax(auto, 1502px);
+  justify-content: center; */
+}
+
+.hero,
+.education,
+.languages,
+.hobbies,
+.footer{
+  background: #1F2233;
+  /* negro más oscuro */
+}
+.my-skills,
+.work-experience,
+.courses{
   background: #24283D;
+}
+
+.header,
+.contact{
+  background: linear-gradient(to right, #2BD3FE, #751CDB );
+}
+
+.header-container{
+  max-width: 1100px;
+  height: inherit;
+  /* margin: 0;
+  display: flex;
+  justify-content: center; */
+}
+
+.header-container ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  height: inherit;
+}
+
+.header-container nav,
+.header-container li{
+  height: inherit;
+}
+
+.header-container a{
+  text-decoration: none;
+  color: white;
+  height: inherit;
 }
 
 hr{
