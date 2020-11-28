@@ -81,7 +81,7 @@ body{
   grid-area: hero-description;
 }
 
-/* .hero-background-border{
+.hero-background-border{
   height: 373.33px;
   width: 280px;
   border: solid 20px #2BD3FE;
@@ -99,7 +99,7 @@ body{
 .hero-image{
   width: inherit;
   height: inherit;
-} */
+}
 
 hr{
   color: white;
