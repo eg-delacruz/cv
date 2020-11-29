@@ -73,9 +73,15 @@ body{
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "hero-picture hero-description";
+
 }
 .hero-image-wrapper{
   grid-area: hero-picture;
+  padding: 50px;
+  padding-top: 113px;
+  padding-bottom: 63.7px;
+  align-items: center;
+  justify-content: center;
 }
 .presentation-wrapper{
   grid-area: hero-description;
@@ -95,10 +101,35 @@ body{
   height: 373.33px;
   width: 280px;
   margin: 0;
+  left: 50px;
+  bottom: 50px;
 }
 .hero-image{
   width: inherit;
   height: inherit;
+  vertical-align: top;
+}
+.presentation-upper{
+  display: grid;
+  grid-template-columns: minmax();
+  grid-template-rows: auto auto;
+  grid-template: "logo title"
+                  "logo subtitle";
+}
+
+.logo-container{
+  grid-area: logo;
+}
+
+.presentation-title{
+  grid-area: title;
+}
+.presentation-subtitle{
+  grid-area: subtitle;
+}
+
+.logo-container{
+  margin: 0;
 }
 
 hr{
