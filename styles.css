@@ -85,6 +85,8 @@ body{
 }
 .presentation-wrapper{
   grid-area: hero-description;
+  padding: 63px;
+  padding-left: 0;
 }
 
 .hero-background-border{
@@ -111,10 +113,11 @@ body{
 }
 .presentation-upper{
   display: grid;
-  grid-template-columns: minmax();
+  grid-template-columns: minmax(auto, 130px) auto;
   grid-template-rows: auto auto;
-  grid-template: "logo title"
-                  "logo subtitle";
+  grid-template-areas: "logo title"
+                       "logo subtitle";
+  align-items: center;
 }
 
 .logo-container{
@@ -123,14 +126,96 @@ body{
 
 .presentation-title{
   grid-area: title;
+  margin: 0;
+  padding-left: 30px;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 42px;
 }
 .presentation-subtitle{
   grid-area: subtitle;
+  margin: 0;
+  padding-left: 30px;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 300;
 }
 
 .logo-container{
   margin: 0;
 }
+
+.presentation-description-up{
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.presentation-description-up span{
+  font-weight: 300;
+  font-style: italic;
+  font-size: 22px;
+}
+
+.presentation-description-down{
+  line-height: 32px;
+}
+.cv-button{
+  margin: 0 auto;
+  height: 45px;
+  width: 130px;
+  background-image: linear-gradient(to right, #2BD3FE, #751CDB);
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.my-skills-container{
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.skills-title-wrapper{
+  display: flex;
+  align-items: center;
+}
+
+.skills-icon{
+  margin: 0;
+}
+
+.skills-title{
+  margin: 0;
+  margin-left: 20px;
+}
+
+.skills-set{
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill{
+  margin: 0 5px;
+  position: relative;
+}
+.skill figure img{
+  width: 100%;
+  vertical-align: top;
+}
+#skill-1{
+margin: 0 5px 0 0;
+}
+#skill-5{
+  margin-right: 0px;
+}
+.skill p{
+  position: absolute;
+}
+/* Posicionar los % con top, bottom, right,... */
 
 hr{
   color: white;
