@@ -239,6 +239,65 @@ margin: 0 auto;
   right: 29px;
 }
 
-hr{
-  color: white;
+.education-title-wrapper{
+  display: flex;
+  align-items: center;
+}
+.education-title-wrapper h2{
+  margin-left: 20px;
+}
+.education-icon{
+  margin: 0;
+}
+
+.education-content{
+  display: grid;
+}
+
+.division{
+  width: 99vw;
+  height: 3px;
+  margin: 0;
+  background-color: #2bd3fe;
+  position: absolute;
+  top: 1476px;
+  left: 0;
+}
+
+.education-content h4{
+  font-size: 25px;
+  line-height: 32px;
+  color: #2bd3fe;
+  text-transform: uppercase;
+  font-family: "Fira Sans", sans-serif;
+}
+.upper-education,
+.under-education{
+  display: flex;
+}
+.upper-education article,
+.under-education article{
+  width: 48%;
+}
+.upper-education article{
+  width: 48%;
+  margin-left: 16vw;
+}
+.under-education article{
+  width: 48%;
+  margin-right: 7vw;
+}
+
+.hooks{
+  display: flex;
+  justify-content: space-around;
+}
+.hook-down{
+  margin-top: 58px;
+}
+.hook-up{
+margin-bottom: 56px;
+}
+.hooks img{
+  position: relative;
 }
