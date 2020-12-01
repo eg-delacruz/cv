@@ -173,6 +173,9 @@ body{
   justify-content: center;
   text-decoration: none;
 }
+.my-skills{
+  padding: 30px 0 50px 0;
+}
 
 .my-skills-container{
   display: grid;
@@ -207,15 +210,34 @@ body{
   vertical-align: top;
 }
 #skill-1{
-margin: 0 5px 0 0;
+margin-left: 0;
+}
+
+.skill p{
+  position: absolute;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 4.5vw;
+  bottom: 150px;
+  right: 70px;
+  margin: 0;
+}
+.skill h4{
+text-align: center;
+font-family: "Fira Sans", sans-serif;
+font-size: 25px;
+margin: 0 auto;
+}
+.skill figure{
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 #skill-5{
   margin-right: 0px;
 }
-.skill p{
-  position: absolute;
+#skill-5 p{
+  margin-right: 0px;
+  right: 29px;
 }
-/* Posicionar los % con top, bottom, right,... */
 
 hr{
   color: white;
