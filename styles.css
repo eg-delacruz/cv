@@ -330,6 +330,39 @@ margin-bottom: 56px;
   right: 220px;
   bottom: 10px;
 }
-.a ::hover{
-  fill: red;
+.work-experience{
+  padding: 20px 0;
+}
+.work-experience-title-wrapper{
+  display: flex;
+  align-items: center;
+}
+.work-experience-icon{
+  margin: 0;
+}
+.work-experience-title-wrapper h2{
+  margin-left: 20px;
+}
+.work-experience-container{
+  display: grid;
+  /* justify-content: center; */
+}
+.work-experience-container article{
+  background: transparent;
+  border: 10px solid transparent;
+  border-image: linear-gradient(0deg, #2BD3FE, #751CDB);
+  border-image-slice:1;
+  margin-bottom: 70px;
+  padding: 32px 40px;
+  width: 66%;
+  position: relative;
+  justify-self: center;
+}
+.article-date{
+  background-color: #24283D;
+  margin: 0;
+  font-family: "FiraSans", sans-serif;
+  font-size: 30px;
+  position: absolute;
+  top: -23px;
 }
