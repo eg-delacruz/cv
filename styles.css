@@ -239,6 +239,11 @@ margin: 0 auto;
   right: 29px;
 }
 
+.education{
+  position: relative;
+  padding: 30px 0;
+}
+
 .education-title-wrapper{
   display: flex;
   align-items: center;
@@ -260,7 +265,7 @@ margin: 0 auto;
   margin: 0;
   background-color: #2bd3fe;
   position: absolute;
-  top: 1476px;
+  top: 430px;
   left: 0;
 }
 
@@ -270,6 +275,7 @@ margin: 0 auto;
   color: #2bd3fe;
   text-transform: uppercase;
   font-family: "Fira Sans", sans-serif;
+  margin-bottom: 20px;
 }
 .upper-education,
 .under-education{
@@ -300,4 +306,22 @@ margin-bottom: 56px;
 }
 .hooks img{
   position: relative;
+}
+.education-specification{
+  font-family: "Fira Sans", sans-serif;
+  font-size: 20px;
+}
+.education-content h5{
+  font-size: 16px;
+  color: #2BD3FE;
+}
+.education1 h5{
+  margin-bottom: 57px;
+}
+.education-remarcables{
+  font-size: 16px;
+  line-height: 22px;
+}
+.education-content strong{
+  font-size: 17px;
 }
