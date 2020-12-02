@@ -325,3 +325,11 @@ margin-bottom: 56px;
 .education-content strong{
   font-size: 17px;
 }
+.button-up-container{
+  position: fixed;
+  right: 220px;
+  bottom: 10px;
+}
+.a ::hover{
+  fill: red;
+}
