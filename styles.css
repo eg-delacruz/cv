@@ -1,3 +1,19 @@
+/* Variables */
+:root{
+  /* colors */
+  --light-blue: #2BD3FE;
+  --purple: #751CDB;
+  --dark-black: #1F2233;
+  --light-black: #24283D;
+  --white: white;
+  /* fonts */
+  --fira: "Fira Sans", sans-serif;
+}
+
+
+/* Variables */
+
+
 body{
   color: white;
   /* font-family: 'Fira Sans', sans-serif; */
@@ -22,18 +38,18 @@ body{
 .languages,
 .hobbies,
 .footer{
-  background: #1F2233;
+  background: var(--dark-black);
   /* negro más oscuro */
 }
 .my-skills,
 .work-experience,
 .courses{
-  background: #24283D;
+  background: var(--light-black);
 }
 
 .header,
 .contact{
-  background: linear-gradient(to right, #2BD3FE, #751CDB );
+  background: linear-gradient(to right, var(--light-blue), #751CDB );
 }
 
 h2{
@@ -66,7 +82,7 @@ h2{
 
 .header-container a{
   text-decoration: none;
-  color: white;
+  color: var(--white);
   height: inherit;
   display: flex;
   align-items: center;
@@ -96,7 +112,7 @@ h2{
 .hero-background-border{
   height: 373.33px;
   width: 280px;
-  border: solid 20px #2BD3FE;
+  border: solid 20px var(--light-blue);
   box-sizing: border-box;
   position: absolute;
 }
@@ -132,14 +148,14 @@ h2{
   grid-area: title;
   margin: 0;
   padding-left: 30px;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: var(--fira);
   font-size: 42px;
 }
 .presentation-subtitle{
   grid-area: subtitle;
   margin: 0;
   padding-left: 30px;
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--fira);
   font-size: 32px;
   font-weight: 300;
 }
@@ -169,7 +185,7 @@ h2{
   margin: 0 auto;
   height: 45px;
   width: 130px;
-  background-image: linear-gradient(to right, #2BD3FE, #751CDB);
+  background-image: linear-gradient(to right, var(--light-blue), var(--purple));
   border-radius: 20px;
   color: white;
   display: flex;
@@ -219,7 +235,7 @@ margin-left: 0;
 
 .skill p{
   position: absolute;
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--fira);
   font-size: 4.5vw;
   bottom: 150px;
   right: 70px;
@@ -227,7 +243,7 @@ margin-left: 0;
 }
 .skill h4{
 text-align: center;
-font-family: "Fira Sans", sans-serif;
+font-family: var(--fira);
 font-size: 25px;
 margin: 0 auto;
 }
@@ -242,6 +258,8 @@ margin: 0 auto;
   margin-right: 0px;
   right: 29px;
 }
+
+/* -------------------------------------------------education */
 
 .education{
   position: relative;
@@ -267,7 +285,7 @@ margin: 0 auto;
   width: 99vw;
   height: 3px;
   margin: 0;
-  background-color: #2bd3fe;
+  background-color: var(--light-blue);
   position: absolute;
   top: 430px;
   left: 0;
@@ -276,9 +294,9 @@ margin: 0 auto;
 .education-content h4{
   font-size: 25px;
   line-height: 32px;
-  color: #2bd3fe;
+  color: var(--light-blue);
   text-transform: uppercase;
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--fira);
   margin-bottom: 20px;
 }
 .upper-education,
@@ -312,12 +330,12 @@ margin-bottom: 56px;
   position: relative;
 }
 .education-specification{
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--fira);
   font-size: 20px;
 }
 .education-content h5{
   font-size: 16px;
-  color: #2BD3FE;
+  color: var(--light-blue);
 }
 .education1 h5{
   margin-bottom: 57px;
@@ -329,11 +347,37 @@ margin-bottom: 56px;
 .education-content strong{
   font-size: 17px;
 }
+
+/* --------------------------------------------button-up */
+
 .button-up-container{
   position: fixed;
   right: 220px;
   bottom: 10px;
 }
+.button-up-container .a{
+  fill: #fff
+}
+.button-up-container .b{
+  fill: #1f2233
+}
+.button-up-container .c{
+  fill:none;
+  stroke:#fff;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-width:3px;
+}
+.button-up-container svg:hover .a{
+  fill: #1f2233;
+}
+.button-up-container svg:hover .b{
+  fill: #fff;
+}
+.button-up-container svg:hover .c{
+  stroke: #1f2233;
+}
+
 
 
 /* --------------------------------------------Experience */
@@ -360,7 +404,7 @@ margin-bottom: 56px;
 .work-experience-container article{
   background: transparent;
   border: 10px solid transparent;
-  border-image: linear-gradient(0deg, #2BD3FE, #751CDB);
+  border-image: linear-gradient(0deg, var(--light-blue), var(--purple));
   border-image-slice:1;
   margin-bottom: 70px;
   padding: 32px 40px;
@@ -369,9 +413,9 @@ margin-bottom: 56px;
   justify-self: center;
 }
 .article-date{
-  background-color: #24283D;
+  background-color: var(--light-black);
   margin: 0;
-  font-family: "FiraSans", sans-serif;
+  font-family: var(--fira);
   font-size: 30px;
   position: absolute;
   top: -23px;
@@ -380,7 +424,7 @@ margin-bottom: 56px;
 }
 
 .article-title{
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--fira);
   font-size: 25px;
   font-weight: bold;
   text-transform: uppercase;
