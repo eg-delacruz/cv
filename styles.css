@@ -193,6 +193,9 @@ h2{
   justify-content: center;
   text-decoration: none;
 }
+
+/* ----------------------------------------------------------skills */
+
 .my-skills{
   padding: 30px 0 50px 0;
 }
@@ -212,7 +215,6 @@ h2{
 }
 
 .skills-title{
-  margin: 0;
   margin-left: 20px;
 }
 
@@ -287,7 +289,7 @@ margin: 0 auto;
   margin: 0;
   background-color: var(--light-blue);
   position: absolute;
-  top: 430px;
+  top: 446px;
   left: 0;
 }
 
@@ -437,4 +439,57 @@ margin-bottom: 56px;
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 0;
+}
+
+/* ----------------------------------------Languages */
+.languages{
+  padding: 30px 0;
+}
+.languages-container{
+  display: grid;
+}
+.languages-title-wrapper{
+  display: flex;
+  align-items: center;
+}
+.languages-icon{
+  margin: 0;
+}
+.languages-title{
+  margin-left: 20px;
+}
+.languages-content{
+  padding: 0 20%;
+}
+.lang-item-border{
+ border: 3px solid #323754;
+ padding: 3px;
+}
+.lang-item a{
+  color: var(--white);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: inherit;
+  justify-content: center;
+}
+.lang-bar{
+  background: linear-gradient(to right, var(--light-blue), var(--purple));
+  height: 34px;
+  text-align: center;
+}
+.spanish-bar{
+  width: 100%;
+}
+.english-bar{
+  width: 95%;
+}
+.english-bar a{
+  margin-left: 5%;
+}
+.german-bar{
+  width: 90%;
+}
+.german-bar a{
+  margin-left: 11%;
 }
