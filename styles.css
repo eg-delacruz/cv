@@ -444,6 +444,7 @@ margin-bottom: 56px;
 /* ----------------------------------------Languages */
 .languages{
   padding: 30px 0;
+  padding-bottom: 50px;
 }
 .languages-container{
   display: grid;
@@ -492,4 +493,49 @@ margin-bottom: 56px;
 }
 .german-bar a{
   margin-left: 11%;
+}
+.lang-item h5{
+  font-family: var(--fira);
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+/* -----------------------------------------------courses */
+.courses{
+  padding: 30px 0;
+  padding-bottom: 50px;
+}
+.courses-title-wrapper{
+  display: flex;
+  align-items: center;
+}
+.courses-icon{
+  margin: 0;
+}
+.courses-title{
+  margin-left: 20px;
+}
+.courses-certificates{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0 15px;
+}
+.courses-certificates h4{
+  font-family: var(--fira);
+  font-size: 25px;
+  text-transform: capitalize;
+}
+.courses-certificates a{
+  text-decoration: none;
+  color: var(--white);
+  margin: 0 auto;
+  text-transform: capitalize;
+  background-image: linear-gradient(to right, var(--light-blue), var(--purple));
+  border-radius: 35px;
+  padding: 5px;
+  font-size: 16px;
+}
+.courses-certificates article{
+  display: flex;
+  flex-direction: column;
 }
