@@ -311,11 +311,13 @@ margin: 0 auto;
 .education{
   position: relative;
   padding: 30px 0;
+  padding-bottom: 60px;
 }
 
 .education-title-wrapper{
   display: flex;
   align-items: center;
+  margin-bottom: 3rem;
 }
 .education-title-wrapper h2{
   margin-left: 20px;
@@ -330,7 +332,7 @@ margin: 0 auto;
 
 .division-container{
   position: absolute;
-  top: 473px;
+  top: 403px;
   left: 0;
 }
 .division-wrapper{
@@ -350,7 +352,7 @@ margin: 0 auto;
   display: flex;
 }
 .hooks img{
-  padding: 0 8em;
+  padding: 0 7em;
 }
 .hook-up{
   margin-bottom: 110px;
@@ -361,12 +363,12 @@ margin: 0 auto;
 
 
 .education-content h4{
-  font-size: 25px;
-  line-height: 32px;
+  font-size: 22px;
+  line-height: 25px;
   color: var(--light-blue);
   text-transform: uppercase;
   font-family: var(--fira);
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   margin-top: 0;
 }
 .upper-education,
@@ -378,13 +380,13 @@ margin: 0 auto;
 }
 
 .education-content article{
-  width: 30em;
+  width: 28em;
   border: 3px solid var(--light-blue);
   padding: 10px;
 }
 .upper-education article{
   /* width: 55%; */
-  margin-left: 7vw;
+  margin-left: 14.4vw;
 }
 .under-education article{
   /* width: 33%; */
@@ -393,17 +395,20 @@ margin: 0 auto;
 
 .education-specification{
   font-family: var(--fira);
-  font-size: 20px;
+  font-size: 18px;
+  margin: 0;
 }
 .education-content h5{
   font-size: 16px;
   color: var(--purple);
+  margin: 10px 0;
 }
 .education1 h5{
-  margin-bottom: 57px;
+  margin-top: 20px;
+  margin-bottom: 41px;
 }
 .education-remarcables{
-  font-size: 16px;
+  font-size: 14px;
   line-height: 22px;
   margin-bottom: 0;
 }
@@ -468,7 +473,7 @@ margin: 0 auto;
 .work-experience-container article{
   background: transparent;
   border: 10px solid transparent;
-  border-image: linear-gradient(0deg, var(--light-blue), var(--purple));
+  border-image: linear-gradient(0deg, var(--light-blue) 50%, var(--purple));
   border-image-slice:1;
   margin-bottom: 70px;
   padding: 32px 40px;
@@ -577,15 +582,26 @@ margin: 0 auto;
 .courses-title{
   margin-left: 20px;
 }
-.courses-certificates{
+.webdevelopment-courses,
+.design-courses,
+.other-courses{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 0 15px;
+  grid-template-columns: 40% 40%;
+  grid-gap: 15px;
+  justify-content: center;
+}
+.courses-certificates h3{
+  margin-left: 140px;
+  margin-top: 40px;
+}
+#web-dev-title{
+  margin-top: 0;
 }
 .courses-certificates h4{
   font-family: var(--fira);
   font-size: 25px;
   text-transform: capitalize;
+  margin: 8px 0;
 }
 .courses-certificates a{
   text-decoration: none;
@@ -600,6 +616,15 @@ margin: 0 auto;
 .courses-certificates article{
   display: flex;
   flex-direction: column;
+  border: 1px solid var(--light-blue);
+  padding: 10px 0;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.item12 h4{
+  font-size: 19px;
 }
 
 /* --------------------------------------hobbies */
