@@ -16,11 +16,11 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('images/icons/fonts/icomoon.eot?hl47f3');
-  src:  url('images/icons/fonts/icomoon.eot?hl47f3#iefix') format('embedded-opentype'),
-    url('images/icons/fonts/icomoon.ttf?hl47f3') format('truetype'),
-    url('images/icons/fonts/icomoon.woff?hl47f3') format('woff'),
-    url('images/icons/fonts/icomoon.svg?hl47f3#icomoon') format('svg');
+  src:  url('../images/icons/fonts/icomoon.eot?hl47f3');
+  src:  url('../images/icons/fonts/icomoon.eot?hl47f3#iefix') format('embedded-opentype'),
+    url('../images/icons/fonts/icomoon.ttf?hl47f3') format('truetype'),
+    url('../images/icons/fonts/icomoon.woff?hl47f3') format('woff'),
+    url('../images/icons/fonts/icomoon.svg?hl47f3#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -68,6 +68,7 @@ body{
 .container{
   max-width: 1502px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .body-grid-container{
@@ -91,6 +92,7 @@ body{
   background: var(--light-black);
 }
 
+
 .header,
 .contact{
   background: linear-gradient(to right, var(--light-blue), #751CDB );
@@ -99,6 +101,8 @@ body{
 h2{
   font-size: 30px;
 }
+
+/* -----------------------------------------------------------------menu */
 
 .header-container{
   max-width: 1100px;
@@ -132,6 +136,12 @@ h2{
   align-items: center;
   /* text-transform: uppercase; */
 }
+.header-container a:hover{
+  color: var(--light-black);
+
+}
+
+/* ---------------------------------------------------------------hero */
 
 .hero-container{
   display: grid;
@@ -151,6 +161,7 @@ h2{
   grid-area: hero-description;
   padding: 63px;
   padding-left: 0;
+  padding-right: 1em;
 }
 
 .hero-background-border{
@@ -333,15 +344,17 @@ margin: 0 auto;
 .division-container{
   position: absolute;
   top: 403px;
-  left: 0;
+  width: 100vw;
+  background: red;
 }
 .division-wrapper{
   position: relative;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 .division{
-  width: 99vw;
+  width: 97%;
   height: 3px;
   background-color: var(--light-blue);
 }
@@ -593,6 +606,7 @@ margin: 0 auto;
 .courses-certificates h3{
   margin-left: 140px;
   margin-top: 40px;
+  font-size: 22px;
 }
 #web-dev-title{
   margin-top: 0;
@@ -616,15 +630,25 @@ margin: 0 auto;
 .courses-certificates article{
   display: flex;
   flex-direction: column;
-  border: 1px solid var(--light-blue);
-  padding: 10px 0;
+  border: 2px solid var(--light-blue);
+  padding: 10px 3px;
   border-radius: 5px;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
+.courses-certificates article:hover{
+  background-color: #373c58;
+}
 .item12 h4{
-  font-size: 19px;
+  font-size: 16px;
+  margin: 11px 0;
+}
+.item10 h4{
+  font-size: 23px;
+}
+.item7 h4{
+  font-size: 24px;
 }
 
 /* --------------------------------------hobbies */
@@ -673,6 +697,13 @@ margin: 0 auto;
 }
 .social-container i{
   font-size: 50px;
+}
+.social-container i:hover{
+  font-size: 60px;
+  transition: 0.3s;
+}
+.email-container a{
+  color: var(--white);
 }
 
 /* ------------------------------------------footer */
