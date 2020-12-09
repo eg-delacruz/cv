@@ -341,11 +341,15 @@ margin: 0 auto;
   display: grid;
 }
 
+/*------------------------------------------------------------------ timeline */
+
 .division-container{
   position: absolute;
   top: 403px;
-  width: 100vw;
-  background: red;
+  width: 100%;
+  /* background: red; */
+  left: 0;
+  right: 0;
 }
 .division-wrapper{
   position: relative;
@@ -354,7 +358,7 @@ margin: 0 auto;
   width: 100%;
 }
 .division{
-  width: 97%;
+  width: 100%;
   height: 3px;
   background-color: var(--light-blue);
 }
