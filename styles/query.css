@@ -1,21 +1,175 @@
 @media screen and (max-width: 1023px){
 
   .skill p{
-    font-size: 4.2em;
+    font-size: 3em;
   }
+
+  .hero-image-wrapper {
+    padding-top: 175px;
+}
 
   .presentation-wrapper{
     padding-left: 63px;
   }
 
+  .hooks img{
+    padding: 0 8.5%;
   }
 
+  .education-content article {
+    width: 52%;
+    border: 3px solid var(--light-blue);
+    padding: 10px;
+}
+
+  .upper-education article {
+    margin-left: 8%;
+}
+.under-education article {
+    margin-right: 4%;
+}
+
+.hobbies-content img {
+    margin: 0 2em;
+}
+.item12 h4 {
+    font-size: 20px;
+}
+.courses-certificates h3 {
+    margin-left: 90px;
+}
+
+  }
+
+/* --------------------------------------------------------------------767 */
 
 @media screen and (max-width: 767px){
+  .presentation-wrapper{
+    display: none;
+  }
+  .presentation-upper-767,
+  .hero-description-767{
+    display: initial;
+  }
+  .hero-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 10px 50px 10px;
+    grid-template-areas: "hero-image-767  hero-logo-767"
+                          "hero-text-767 hero-text-767";
+
+  }
+
+  .hero-image-wrapper{
+    padding: 100px 0 0px 0;
+    grid-area: hero-image-767;
+  }
+
+  .presentation-upper-767{
+    /* display: grid;
+    grid-template-columns: minmax(auto, 130px) auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "logo title"
+                         "logo subtitle";
+    align-items: center; */
+    grid-area: hero-logo-767;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .logo-container-767{
+    margin: 0 auto;
+  }
+
+  .hero-description-767{
+    grid-area: hero-text-767;
+  }
+
+  .presentation-title-767{
+    grid-area: title;
+    margin: 0;
+    padding-left: 0px;
+    font-family: var(--fira);
+    font-size: 42px;
+  }
+  .presentation-subtitle-767{
+    grid-area: subtitle;
+    margin: 0;
+    padding-left: 0px;
+    font-family: var(--fira);
+    font-size: 32px;
+    font-weight: 300;
+  }
+
+  .presentation-description-up-767{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 30px 0;
+  }
+
+  .presentation-description-up-767 span{
+    font-weight: 300;
+    font-style: italic;
+    font-size: 22px;
+  }
+
+  .presentation-description-down-767{
+    line-height: 32px;
+  }
+
+/* ------------------------------hero-end */
+
+  .cv-button-767{
+    margin: 0 auto;
+    height: 45px;
+    width: 130px;
+    background-image: linear-gradient(to right, var(--light-blue), var(--purple));
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .skill h4 {
+    font-size: 1.3em;
+}
 
   .skill p {
-    font-size: 3.7em;
+    font-size: 3.4em;
   }
+
+  .division-container {
+    top: 443px;
+}
+.skill figure {
+    margin: 0 7px;
+    margin-bottom: 5px;
+}
+
+.button-up-container {
+    right: 30px;
+    bottom: 125px;
+}
+.hobbies-content img {
+    margin: 0 1em;
+}
+.courses-certificates h3 {
+    margin-left: 80px;
+}
+.hobbies {
+    padding-top: 20px;
+}
+.contact-title {
+    margin-top: 10px;
+}
+.email {
+    margin-bottom: 10px;
+}
 
 }
 

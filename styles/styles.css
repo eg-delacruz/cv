@@ -142,7 +142,10 @@ h2{
 }
 
 /* ---------------------------------------------------------------hero */
-
+.presentation-upper-767,
+.hero-description-767{
+  display: none;
+}
 .hero-container{
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -368,6 +371,7 @@ margin: 0 auto;
   position: absolute;
   top: -5.15em;
   display: flex;
+  max-width: 100%;
 }
 .hooks img{
   padding: 0 7em;
@@ -379,6 +383,7 @@ margin: 0 auto;
   transform: rotate(180deg);
 }
 
+/*---------------------------------------------------------- education-content */
 
 .education-content h4{
   font-size: 22px;
@@ -398,7 +403,7 @@ margin: 0 auto;
 }
 
 .education-content article{
-  width: 28em;
+  width: 30%;
   border: 3px solid var(--light-blue);
   padding: 10px;
 }
