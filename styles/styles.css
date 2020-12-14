@@ -165,6 +165,7 @@ h2{
   padding: 63px;
   padding-left: 0;
   padding-right: 1em;
+
 }
 
 .hero-background-border{
@@ -371,10 +372,11 @@ margin: 0 auto;
   position: absolute;
   top: -5.15em;
   display: flex;
-  max-width: 100%;
+  min-width: 80%;
+  justify-content: space-between;
 }
 .hooks img{
-  padding: 0 7em;
+  /* padding: 0 7em; */
 }
 .hook-up{
   margin-bottom: 110px;
@@ -680,13 +682,17 @@ margin: 0 auto;
   margin-left: 20px;
 }
 .hobbies-content{
+  align-self: center;
   justify-self: center;
+  min-width: 70%;
+  display: flex;
+  justify-content: space-between;
 }
-.hobbies-content img{
+/* .hobbies-content img{
   margin: 0 2.5em;
-}
+} */
 
-/* -------------------------------------contact */
+/* -------------------------------------contact start*/
 .contact-container{
   display: flex;
   justify-content: space-between;
@@ -705,6 +711,7 @@ margin: 0 auto;
   color: white;
   margin: 0 20px;
 }
+
 .social-container i{
   font-size: 50px;
 }
@@ -714,9 +721,13 @@ margin: 0 auto;
 }
 .email-container a{
   color: var(--white);
+  text-decoration: underline;
+}
+.email-container a:hover{
+  text-decoration: none;
 }
 
-/* ------------------------------------------footer */
+/* ------------------------------------------footer start */
 .footer-container{
   display: flex;
   justify-content: space-between;

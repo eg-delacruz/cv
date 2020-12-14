@@ -5,15 +5,15 @@
   }
 
   .hero-image-wrapper {
-    padding-top: 175px;
-}
+      padding-top: 120px;
+  }
 
   .presentation-wrapper{
     padding-left: 63px;
   }
 
-  .hooks img{
-    padding: 0 8.5%;
+  .presentation-description-up{
+    margin-top: 30px;
   }
 
   .education-content article {
@@ -29,9 +29,9 @@
     margin-right: 4%;
 }
 
-.hobbies-content img {
+/* .hobbies-content img {
     margin: 0 2em;
-}
+} */
 .item12 h4 {
     font-size: 20px;
 }
@@ -60,9 +60,20 @@
 
   }
 
+  .hero-image-container {
+    height: 280.33px;
+}
+
+  .hero-background-border {
+    height: 280.33px;
+    width: 210.17px;
+}
+
   .hero-image-wrapper{
     padding: 100px 0 0px 0;
     grid-area: hero-image-767;
+    position: relative;
+    left: 45px;
   }
 
   .presentation-upper-767{
@@ -89,14 +100,14 @@
 
   .presentation-title-767{
     grid-area: title;
-    margin: 0;
+    margin: 0 auto;
     padding-left: 0px;
     font-family: var(--fira);
     font-size: 42px;
   }
   .presentation-subtitle-767{
     grid-area: subtitle;
-    margin: 0;
+    margin: 0 auto;
     padding-left: 0px;
     font-family: var(--fira);
     font-size: 32px;
@@ -122,6 +133,16 @@
 
 /* ------------------------------hero-end */
 
+.education-title-wrapper {
+    margin-bottom: 1rem;
+}
+.education3 h4{
+  font-size: 17px;
+}
+.education1 h5{
+  margin-bottom: 24px;
+}
+
   .cv-button-767{
     margin: 0 auto;
     height: 45px;
@@ -144,7 +165,7 @@
   }
 
   .division-container {
-    top: 443px;
+    top: 410px;
 }
 .skill figure {
     margin: 0 7px;
@@ -155,9 +176,9 @@
     right: 30px;
     bottom: 125px;
 }
-.hobbies-content img {
-    margin: 0 1em;
-}
+/* .hobbies-content img {
+    margin: 0 1em; */
+/* } */
 .courses-certificates h3 {
     margin-left: 80px;
 }
@@ -178,10 +199,10 @@
 
 /* -----------------------------------continue here adding burguer button */
 
-
-
 @media screen and (max-width: 480px){
-
+ body{
+   margin: 5px;
+ }
 }
 @media screen and (max-width: 320px){
 
