@@ -201,6 +201,62 @@
 
 @media screen and (max-width: 480px){
 
+  /* --------------------------------------education start */
+  .division-container{
+    display: none;
+  }
+  .division-container-480{
+    display: initial;
+  }
+  .education-container{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "title title"
+                        "timeline education";
+  }
+
+  .education-title-wrapper{
+    grid-area: title;
+    margin-bottom: 0;
+  }
+
+  .division-wrapper-480{
+    grid-area: timeline;
+    position: relative;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    top:50px;
+    width: 60px;
+  }
+  .education-content{
+  grid-area: education;
+  }
+  .division-480{
+    width: 3px;
+    height: 100%;
+    background-color: var(--light-blue);
+  }
+
+  .hooks-480{
+    position: absolute;
+    top: -5.15em;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    justify-content: space-between;
+  }
+  /* .hook-up-480{
+    margin-bottom: 110px;
+  } */
+  .hook-480{
+    transform: rotate(90deg);
+
+  }
+
+
+  /* --------------------------------------education end */
+
 }
 @media screen and (max-width: 320px){
 

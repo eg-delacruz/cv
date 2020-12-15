@@ -353,6 +353,13 @@ margin: 0 auto;
 
 /*------------------------------------------------------------------ timeline */
 
+.division-container-480{
+  display: none;
+}
+.hooks-480{
+  display: none;
+}
+
 .division-container{
   position: absolute;
   top: 396px;
