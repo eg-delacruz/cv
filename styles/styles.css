@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 /* Variables */
 :root{
   /* colors */
@@ -69,6 +73,7 @@ body{
   max-width: 1502px;
   margin: 0 auto;
   padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .body-grid-container{
