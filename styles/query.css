@@ -201,6 +201,31 @@
 
 @media screen and (max-width: 480px){
 
+/* ------------------------------------------------------------hero start */
+.hero-container{
+  grid-template-columns: 1fr;
+  grid-template-areas: "logo"
+                        "picture"
+                        "text";
+}
+.presentation-upper-767{
+  grid-area: logo;
+}
+.hero-image-wrapper{
+  grid-area: picture;
+}
+.hero-description-767{
+  grid-area: text;
+}
+
+
+
+
+/* ------------------------------------------------------------hero end */
+
+
+
+
   /* --------------------------------------education start */
   .division-container{
     display: none;
@@ -226,34 +251,89 @@
     /* display: flex;
     flex-direction: column;
     justify-content: center; */
-    top:50px;
+    /* top:50px; */
     width: 60px;
+    padding-bottom: 38px;
   }
   .education-content{
   grid-area: education;
+  display: flex;
+  flex-direction: column;
   }
+
   .division-480{
     width: 3px;
     height: 100%;
     background-color: var(--light-blue);
+    margin-left: 28px;
   }
 
   .hooks-480{
     position: absolute;
-    top: -5.15em;
+    top: -24px;
+    left: 28px;
     display: flex;
     flex-direction: column;
     bottom: 0;
     justify-content: space-between;
+    padding-bottom: 0px;
   }
   /* .hook-up-480{
     margin-bottom: 110px;
   } */
   .hook-480{
     transform: rotate(90deg);
-
+  }
+  .hooks-480 img{
+    width: 40px;
   }
 
+  .upper-education,
+  .under-education{
+    display: initial;
+    margin-top: 0;
+  }
+  .upper-education{
+    order: 2;
+  }
+  .under-education{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .education-content article{
+    margin: 15px auto;
+    width: 90%;
+  }
+  .education4{
+    margin-bottom: 0 !important;
+  }
+  .education2{
+    margin-top: 0px !important;
+  }
+  .education1{
+    order: 2;
+  }
+  .education3{
+    order: 1;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+  }
+  .education-content h4{
+    font-size: 18px;
+  }
+  .education-content small{
+    font-size: 70%;
+  }
+  .education-remarcables{
+    font-size: 12px;
+  }
+  .education-content strong{
+    font-size: 16px;
+  }
+  .education1 h5 {
+    margin-bottom: 10px;
+}
 
   /* --------------------------------------education end */
 
