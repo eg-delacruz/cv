@@ -1,18 +1,13 @@
-@media screen and (max-width: 1023px){
-
-  .skill p{
+@media screen and (max-width: 1023px) {
+  .skill p {
     font-size: 3em;
   }
 
-  .hero-image-wrapper {
-      padding-top: 120px;
-  }
-
-  .presentation-wrapper{
+  .presentation-wrapper {
     padding-left: 63px;
   }
 
-  .presentation-description-up{
+  .presentation-description-up {
     margin-top: 30px;
   }
 
@@ -20,63 +15,62 @@
     width: 52%;
     border: 3px solid var(--light-blue);
     padding: 10px;
-}
+  }
 
   .upper-education article {
     margin-left: 8%;
-}
-.under-education article {
-    margin-right: 4%;
-}
+  }
 
-/* .hobbies-content img {
+  .under-education article {
+    margin-right: 4%;
+  }
+
+  /* .hobbies-content img {
     margin: 0 2em;
 } */
-.item12 h4 {
+  .item12 h4 {
     font-size: 20px;
-}
-.courses-certificates h3 {
-    margin-left: 90px;
-}
-
   }
+
+  .courses-certificates h3 {
+    margin-left: 90px;
+  }
+}
 
 /* --------------------------------------------------------------------767 */
-
-@media screen and (max-width: 767px){
-  .presentation-wrapper{
+@media screen and (max-width: 767px) {
+  .presentation-wrapper {
     display: none;
   }
+
   .presentation-upper-767,
-  .hero-description-767{
+  .hero-description-767 {
     display: initial;
   }
-  .hero-container{
+
+  .hero-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0px 10px 50px 10px;
     grid-template-areas: "hero-image-767  hero-logo-767"
-                          "hero-text-767 hero-text-767";
-
+      "hero-text-767 hero-text-767";
   }
 
   .hero-image-container {
-    height: 280.33px;
-}
+    width: 200px;
+  }
 
   .hero-background-border {
     height: 280.33px;
     width: 210.17px;
-}
-
-  .hero-image-wrapper{
-    padding: 100px 0 0px 0;
-    grid-area: hero-image-767;
-    position: relative;
-    left: 45px;
   }
 
-  .presentation-upper-767{
+  .hero-image-wrapper {
+    padding: 50px;
+    grid-area: hero-image-767;
+  }
+
+  .presentation-upper-767 {
     /* display: grid;
     grid-template-columns: minmax(auto, 130px) auto;
     grid-template-rows: auto auto;
@@ -90,60 +84,69 @@
     justify-content: center;
   }
 
-  .logo-container-767{
+  .logo-container-767 {
     margin: 0 auto;
+    width: 100px;
   }
 
-  .hero-description-767{
+  .logo-767 {
+    width: inherit;
+  }
+
+  .hero-description-767 {
     grid-area: hero-text-767;
   }
 
-  .presentation-title-767{
+  .presentation-title-767 {
     grid-area: title;
     margin: 0 auto;
     padding-left: 0px;
     font-family: var(--fira);
     font-size: 42px;
+    text-align: center;
   }
-  .presentation-subtitle-767{
+
+  .presentation-subtitle-767 {
     grid-area: subtitle;
     margin: 0 auto;
     padding-left: 0px;
     font-family: var(--fira);
     font-size: 32px;
     font-weight: 300;
+    text-align: center;
   }
 
-  .presentation-description-up-767{
+  .presentation-description-up-767 {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 400;
     margin: 30px 0;
   }
 
-  .presentation-description-up-767 span{
+  .presentation-description-up-767 span {
     font-weight: 300;
     font-style: italic;
     font-size: 22px;
   }
 
-  .presentation-description-down-767{
+  .presentation-description-down-767 {
     line-height: 32px;
   }
 
-/* ------------------------------hero-end */
-
-.education-title-wrapper {
+  /* ------------------------------hero-end */
+  .education-title-wrapper {
     margin-bottom: 1rem;
-}
-.education3 h4{
-  font-size: 17px;
-}
-.education1 h5{
-  margin-bottom: 24px;
-}
+  }
 
-  .cv-button-767{
+  .education3 h4 {
+    font-size: 17px;
+  }
+
+  .education1 h5 {
+    margin-bottom: 24px;
+  }
+
+  .cv-button-767 {
     margin: 0 auto;
     height: 45px;
     width: 130px;
@@ -158,7 +161,7 @@
 
   .skill h4 {
     font-size: 1.3em;
-}
+  }
 
   .skill p {
     font-size: 3.4em;
@@ -166,87 +169,112 @@
 
   .division-container {
     top: 410px;
-}
-.skill figure {
+  }
+
+  .skill figure {
     margin: 0 7px;
     margin-bottom: 5px;
-}
+  }
 
-.button-up-container {
+  .button-up-container {
     right: 30px;
     bottom: 125px;
-}
-/* .hobbies-content img {
+  }
+
+  /* .hobbies-content img {
     margin: 0 1em; */
-/* } */
-.courses-certificates h3 {
+  /* } */
+  .courses-certificates h3 {
     margin-left: 80px;
-}
-.hobbies {
+  }
+
+  .hobbies {
     padding-top: 20px;
-}
-.contact-title {
+  }
+
+  .contact-title {
     margin-top: 10px;
-}
-.email {
+  }
+
+  .email {
     margin-bottom: 10px;
+  }
 }
-
-}
-
-
-
 
 /* -----------------------------------continue here adding burguer button */
+@media screen and (max-width: 480px) {
 
-@media screen and (max-width: 480px){
+  /* ------------------------------------------------------------hero start */
+  .hero-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "logo"
+      "picture"
+      "text";
+  }
 
-/* ------------------------------------------------------------hero start */
-.hero-container{
-  grid-template-columns: 1fr;
-  grid-template-areas: "logo"
-                        "picture"
-                        "text";
-}
-.presentation-upper-767{
-  grid-area: logo;
-}
-.hero-image-wrapper{
-  grid-area: picture;
-  /* max-width: 92%; */
-}
-.hero-description-767{
-  grid-area: text;
-}
+  .presentation-upper-767 {
+    grid-area: logo;
+  }
 
+  .hero-image-wrapper {
+    grid-area: picture;
+    /* max-width: 92%; */
+  }
 
+  .hero-description-767 {
+    grid-area: text;
+  }
 
+  /* ------------------------------------------------------------hero end */
+  /* ---------------------------------------------------------skills start */
+  .my-skills{
+    padding: 0;
+  }
+  .skills-set {
+    flex-direction: column;
+    align-items: center;
+  }
 
-/* ------------------------------------------------------------hero end */
+  .skill h4 {
+    font-size: 1.3em;
+    margin-bottom: 60px;
+    margin-top: -78px;
+  }
 
+  .skill p {
+    font-size: 5em;
+    margin-bottom: 15px;
+  }
+  .skill{
+    width: 50%;
+  }
+  .skill-4 h4{
+    margin-bottom: 40px;
+  }
 
-
-
+  /* ---------------------------------------------------------skills end */
   /* --------------------------------------education start */
-  .division-container{
+  .division-container {
     display: none;
   }
-  .division-container-480{
+
+  .division-container-480 {
     display: initial;
   }
-  .education-container{
+
+  .education-container {
     display: grid;
     grid-template-rows: auto 1fr;
     grid-template-areas: "title title"
-                        "timeline education";
+      "timeline education";
   }
 
-  .education-title-wrapper{
+  .education-title-wrapper {
     grid-area: title;
     margin-bottom: 0;
   }
 
-  .division-wrapper-480{
+  .division-wrapper-480 {
     grid-area: timeline;
     position: relative;
     /* display: flex;
@@ -256,20 +284,21 @@
     width: 60px;
     padding-bottom: 38px;
   }
-  .education-content{
-  grid-area: education;
-  display: flex;
-  flex-direction: column;
+
+  .education-content {
+    grid-area: education;
+    display: flex;
+    flex-direction: column;
   }
 
-  .division-480{
+  .division-480 {
     width: 3px;
     height: 100%;
     background-color: var(--light-blue);
     margin-left: 28px;
   }
 
-  .hooks-480{
+  .hooks-480 {
     position: absolute;
     top: -24px;
     left: 28px;
@@ -279,66 +308,157 @@
     justify-content: space-between;
     padding-bottom: 0px;
   }
+
   /* .hook-up-480{
     margin-bottom: 110px;
   } */
-  .hook-480{
+  .hook-480 {
     transform: rotate(90deg);
   }
-  .hooks-480 img{
+
+  .hooks-480 img {
     width: 40px;
   }
 
   .upper-education,
-  .under-education{
+  .under-education {
     display: initial;
     margin-top: 0;
   }
-  .upper-education{
+
+  .upper-education {
     order: 2;
   }
-  .under-education{
+
+  .under-education {
     order: 1;
     display: flex;
     flex-direction: column;
   }
-  .education-content article{
+
+  .education-content article {
     margin: 15px auto;
     width: 90%;
   }
-  .education4{
+
+  .education4 {
     margin-bottom: 0 !important;
   }
-  .education2{
+
+  .education2 {
     margin-top: 0px !important;
   }
-  .education1{
+
+  .education1 {
     order: 2;
   }
-  .education3{
+
+  .education3 {
     order: 1;
     margin-bottom: 0 !important;
     margin-top: 0 !important;
   }
-  .education-content h4{
+
+  .education-content h4 {
     font-size: 18px;
   }
-  .education-content small{
+
+  .education-content small {
     font-size: 70%;
   }
-  .education-remarcables{
+
+  .education-remarcables {
     font-size: 12px;
   }
-  .education-content strong{
+
+  .education-content strong {
     font-size: 16px;
   }
+
   .education1 h5 {
     margin-bottom: 10px;
-}
+  }
 
   /* --------------------------------------education end */
-
+  /* ---------------------------------------------------------work-experience start */
+  .work-experience-container article{
+    width: 80%;
+    padding: 10px;
+    padding-top: 20px;
+  }
+  .article-date{
+    font-size: 25px;
+  }
+  .article-title{
+    font-size: 22px;
+  }
+  .experience-description{
+    font-size: 14px;
+  }
+  /* ---------------------------------------------------------work-experience end */
+  /* ------------------------------------------------------languages start */
+  .languages-content{
+    padding: 0 8%;
+  }
+  /* ------------------------------------------------------languages end */
+  /* -------------------------------------------------------courses start */
+  .courses-certificates h4 {
+    font-size: 20px;
+  }
+  .courses-certificates h3 {
+    margin-left: 40px;
+  }
+  /* -------------------------------------------------------courses end */
 }
-@media screen and (max-width: 320px){
 
+/* ------------------------------------------hobbies and interests start */
+.hobbies-content img {
+    margin: 0 5px;
+}
+/* ------------------------------------------hobbies and interests end */
+.contact-container{
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+.email-container{
+  text-align: center;
+}
+.email-container h2{
+  margin-bottom: 0;
+}
+.email-container p{
+  margin-top: 15px;
+  font-size: 20px;
+}
+.social-container i{
+  font-size: 40px;
+}
+.footer-container{
+  flex-direction: column;
+}
+
+.button-up-container{
+  bottom: 90px;
+  right: 25px;
+}
+
+
+
+@media screen and (max-width: 320px) {
+
+  /* -------------------------------------------------------courses start */
+  .webdevelopment-courses,
+  .design-courses,
+  .other-courses {
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    padding: 0 30px;
+  }
+
+  .courses-certificates h4 {
+    font-size: 25px;
+  }
+
+
+  /* -------------------------------------------------------courses end */
 }
