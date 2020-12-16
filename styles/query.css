@@ -213,6 +213,7 @@
 }
 .hero-image-wrapper{
   grid-area: picture;
+  /* max-width: 92%; */
 }
 .hero-description-767{
   grid-area: text;
