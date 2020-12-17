@@ -204,6 +204,65 @@
 /* -----------------------------------continue here adding burguer button */
 @media screen and (max-width: 480px) {
 
+  .burger-button{
+    display: initial;
+  }
+  .menu{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background: rgb(36,40,61,.7);
+    z-index: 4;
+    top: 0;
+    width: 100vw;
+    bottom: 0;
+    align-items: center;
+    left: -100vw;
+    /* left: 0; */
+    transition: 0.3s;
+  }
+  .menu.is-active{
+    left: 0;
+  }
+  .header-line{
+    display: initial;
+    height: 50px;
+    background: linear-gradient(to right, var(--light-blue), #751CDB );
+    width: 100vw;
+  }
+
+  .header{
+    position:fixed;
+    z-index: 5;
+    background: transparent;
+  }
+  .header-container{
+    height: 100vh;
+  }
+  .menu ul li{
+    font-size: 16px;
+  }
+  .header{
+    display: block;
+    height: auto;
+  }
+  .header ul {
+    display: initial;
+    height: auto;
+  }
+  .header ul li{
+    height: 35px;
+  }
+  .header ul li a br{
+    display: none;
+  }
+  .header a{
+    justify-content: center;
+    font-weight: 700;
+    color: var(--white);
+    font-size: 18px;
+  }
+
   /* ------------------------------------------------------------hero start */
   .hero-container {
     grid-template-columns: 1fr;
@@ -218,11 +277,14 @@
 
   .hero-image-wrapper {
     grid-area: picture;
-    /* max-width: 92%; */
+    padding-top: 30px;
   }
 
   .hero-description-767 {
     grid-area: text;
+  }
+  .hero .presentation-description-down-767{
+    text-align: center;
   }
 
   /* ------------------------------------------------------------hero end */
@@ -409,11 +471,11 @@
     margin-left: 40px;
   }
   /* -------------------------------------------------------courses end */
-}
 
 /* ------------------------------------------hobbies and interests start */
 .hobbies-content img {
     margin: 0 5px;
+    width: 10%;
 }
 /* ------------------------------------------hobbies and interests end */
 .contact-container{
@@ -440,6 +502,7 @@
 .button-up-container{
   bottom: 90px;
   right: 25px;
+}
 }
 
 

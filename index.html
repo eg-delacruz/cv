@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="es" dir="ltr">
 
 <head>
   <meta charset="utf-8">
@@ -16,9 +16,12 @@
   <link rel="stylesheet" href="styles/query.css">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
   <title>Gerardo De La Cruz</title>
 </head>
+
+<i class="icon-menu burger-button" id="burger-menu"></i>
 
 <body>
   <div class="body-grid-container">
@@ -58,9 +61,9 @@
 
     <!-- -----------------------------------------start hero -->
 
+    <div class="header-line"></div>
     <section class="hero" id="hero">
       <div class="hero-container container">
-
         <div class="hero-image-wrapper fadeInRight">
           <figure class="hero-image-container">
             <img class="hero-image" src="images/hero/escogida_2.jpg" alt="hero_image">
@@ -519,6 +522,48 @@
     </footer>
 
   </div>
+
+  <script>
+    const menu = document.querySelector(".menu");
+    const burgerButton = document.querySelector("#burger-menu");
+    const ipad = window.matchMedia("screen and (max-width: 480px)")
+    // Esta última línea guarda el MQ de 480. Solo se activará cuando tenga ese tamaño
+    ipad.addListener(validation)
+    // Esta última pone un lístener cuando el MQ 767 es vigente y activa
+    // la función "validation"
+    function validation(event)
+    {
+      if (event.matches)
+      {
+        burgerButton.addEventListener("click", hideShow);
+        menu.addEventListener("click", hideMenu);
+      }
+      else
+      {
+        burgerButton.removeEventListener("click", hideShow);
+        menu.removeEventListener("click", hideMenu);
+      }
+    }
+
+    validation(ipad);
+
+
+    function hideShow (){
+      if (menu.classList.contains("is-active"))
+      {
+        menu.classList.remove("is-active");
+      }
+      else {
+        {
+          menu.classList.add("is-active");
+        }
+      }
+    }
+
+    function hideMenu(){
+      menu.classList.remove("is-active");
+    }
+  </script>
 
 </body>
 

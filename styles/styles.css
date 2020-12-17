@@ -20,11 +20,11 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('../images/icons/fonts/icomoon.eot?hl47f3');
-  src:  url('../images/icons/fonts/icomoon.eot?hl47f3#iefix') format('embedded-opentype'),
-    url('../images/icons/fonts/icomoon.ttf?hl47f3') format('truetype'),
-    url('../images/icons/fonts/icomoon.woff?hl47f3') format('woff'),
-    url('../images/icons/fonts/icomoon.svg?hl47f3#icomoon') format('svg');
+  src:  url('../images/icons/fonts/icomoon.eot?bdtt4d');
+  src:  url('../images/icons/fonts/icomoon.eot?bdtt4d#iefix') format('embedded-opentype'),
+    url('../images/icons/fonts/icomoon.ttf?bdtt4d') format('truetype'),
+    url('../images/icons/fonts/icomoon.woff?bdtt4d') format('woff'),
+    url('../images/icons/fonts/icomoon.svg?bdtt4d#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -45,6 +45,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-menu:before {
+  content: "\e904";
+}
 .icon-linkedin:before {
   content: "\e900";
 }
@@ -56,6 +59,21 @@
 }
 .icon-facebook:before {
   content: "\e903";
+}
+
+.burger-button{
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0,0,0,.8);
+  border-radius: 50%;
+  display: none;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  z-index: 5;
+  left: 5px;
+  top: 5px;
+  color: white;
 }
 
 
@@ -149,6 +167,9 @@ h2{
 /* ---------------------------------------------------------------hero */
 .presentation-upper-767,
 .hero-description-767{
+  display: none;
+}
+.header-line{
   display: none;
 }
 .hero-container{
