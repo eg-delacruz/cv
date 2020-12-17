@@ -1,0 +1,62 @@
+@media screen and (max-width: 1397px){
+  .division-container{
+    top: 421px;
+  }
+}
+@media screen and (max-width: 1352px){
+  .division-container{
+    top: 444px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .division-container{
+    top: 397px;
+  }
+  .skill p {
+    font-size: 3em;
+  }
+
+  .presentation-wrapper {
+    padding-left: 63px;
+  }
+
+  .presentation-description-up {
+    margin-top: 30px;
+  }
+
+  .education-content article {
+    width: 52%;
+    border: 3px solid var(--light-blue);
+    padding: 10px;
+  }
+
+  .upper-education article {
+    margin-left: 8%;
+  }
+
+  .under-education article {
+    margin-right: 4%;
+  }
+
+  /* .hobbies-content img {
+    margin: 0 2em;
+} */
+  .item12 h4 {
+    font-size: 20px;
+  }
+
+  .courses-certificates h3 {
+    margin-left: 90px;
+  }
+}
+
+@media screen and (max-width: 1003px){
+  .division-container{
+    top: 421px;
+  }
+}
+@media screen and (max-width: 971px){
+  .division-container{
+    top: 443px;
+  }
+}

@@ -1,0 +1,183 @@
+@media screen and (max-width: 767px) {
+  /* .presentation-wrapper {
+    display: none;
+  }
+
+  .presentation-upper-767,
+  .hero-description-767 {
+    display: initial;
+  } */
+
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 10px 50px 10px;
+    grid-template-areas: "hero-image-767  hero-logo-767"
+      "hero-text-767 hero-text-767";
+  }
+
+  .hero-image-container {
+    width: 200px;
+  }
+
+  .hero-background-border {
+    height: 280.33px;
+    width: 210.17px;
+  }
+
+  .hero-image-wrapper {
+    padding: 50px;
+    grid-area: hero-image-767;
+  }
+
+  .presentation-upper {
+    /* display: grid;
+    grid-template-columns: minmax(auto, 130px) auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "logo title"
+                         "logo subtitle";
+    align-items: center; */
+    grid-area: hero-logo-767;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .logo-container {
+    margin: 0 auto;
+    width: 100px;
+  }
+
+  .logo {
+    width: inherit;
+  }
+
+  .hero-description {
+    grid-area: hero-text-767;
+  }
+
+  .presentation-title {
+    grid-area: title;
+    margin: 0 auto;
+    padding-left: 0px;
+    font-family: var(--fira);
+    font-size: 42px;
+    text-align: center;
+  }
+
+  .presentation-subtitle {
+    grid-area: subtitle;
+    margin: 0 auto;
+    padding-left: 0px;
+    font-family: var(--fira);
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .presentation-description-up {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 30px 0;
+  }
+
+  .presentation-description-up span {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 22px;
+  }
+
+  .presentation-description-down {
+    line-height: 32px;
+  }
+
+  /* ------------------------------hero-end */
+  .education-title-wrapper {
+    margin-bottom: 1rem;
+  }
+
+  .education3 h4 {
+    font-size: 17px;
+  }
+
+  .education1 h5 {
+    margin-bottom: 24px;
+  }
+
+  .cv-button-767 {
+    margin: 0 auto;
+    height: 45px;
+    width: 130px;
+    background-image: linear-gradient(to right, var(--light-blue), var(--purple));
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .skill h4 {
+    font-size: 1.3em;
+  }
+
+  .skill p {
+    font-size: 3.4em;
+  }
+
+  .division-container {
+    top: 410px;
+  }
+
+  .skill figure {
+    margin: 0 7px;
+    margin-bottom: 5px;
+  }
+
+  .button-up-container {
+    right: 30px;
+    bottom: 125px;
+  }
+
+  /* .hobbies-content img {
+    margin: 0 1em; */
+  /* } */
+  .courses-certificates h3 {
+    margin-left: 80px;
+  }
+
+  .hobbies {
+    padding-top: 20px;
+  }
+
+  .contact-title {
+    margin-top: 10px;
+  }
+
+  .email {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 734px){
+  .division-container{
+    top: 428px;
+  }
+}
+@media screen and (max-width: 671px){
+  .division-container{
+    top: 433px;
+  }
+}
+@media screen and (max-width: 612px){
+  .division-container{
+    top: 457px;
+  }
+}
+@media screen and (max-width: 559px){
+  .division-container{
+    top: 480px;
+  }
+}

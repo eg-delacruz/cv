@@ -78,7 +78,9 @@
 
 
 /* Icons */
-
+html{
+  max-width: 100vw;
+}
 
 body{
   color: white;
@@ -165,17 +167,12 @@ h2{
 }
 
 /* ---------------------------------------------------------------hero */
-.presentation-upper-767,
-.hero-description-767{
-  display: none;
-}
-.header-line{
-  display: none;
-}
+
 .hero-container{
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-areas: "hero-picture hero-description";
+  grid-template-areas: "hero-picture hero-logo"
+                       "hero-picture hero-description";
 
 }
 .hero-image-wrapper{
@@ -184,25 +181,14 @@ h2{
   align-items: center;
   justify-content: center;
 }
-.presentation-wrapper{
-  grid-area: hero-description;
-  padding: 63px;
-  padding-left: 0;
-  padding-right: 1em;
-
-}
-
 
 
 .hero-image-container{
   margin: 0;
   position: relative;
-  /* height: 373.33px; */
-  /* width: auto; */
   width: 280px;
   margin: auto;
-  /* left: 50px;
-  bottom: 50px; */
+
 }
 .hero-image-container::before{
   position: absolute;
@@ -220,12 +206,16 @@ h2{
   vertical-align: top;
 }
 .presentation-upper{
+  grid-area: hero-logo;
   display: grid;
   grid-template-columns: minmax(auto, 130px) auto;
   grid-template-rows: auto auto;
   grid-template-areas: "logo title"
                        "logo subtitle";
   align-items: center;
+}
+.hero-description{
+  grid-area: hero-description;
 }
 
 .logo-container{
@@ -281,7 +271,7 @@ h2{
   justify-content: center;
   text-decoration: none;
 }
-
+/* ---------------------------------------------------------hero-end */
 /* ----------------------------------------------------------skills */
 
 .my-skills{

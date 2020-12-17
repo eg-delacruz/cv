@@ -1,0 +1,18 @@
+@media screen and (max-width: 320px) {
+
+  /* -------------------------------------------------------courses start */
+  .webdevelopment-courses,
+  .design-courses,
+  .other-courses {
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    padding: 0 30px;
+  }
+
+  .courses-certificates h4 {
+    font-size: 25px;
+  }
+
+
+  /* -------------------------------------------------------courses end */
+}
