@@ -1,6 +1,79 @@
 @media screen and (max-width: 320px) {
 
   /* -------------------------------------------------------courses start */
+  .presentation-title{
+    font-size: 32px;
+  }
+  .presentation-subtitle{
+    font-size: 27px;
+  }
+  .hero-image-wrapper{
+    padding-right: 0;
+    padding-top: 15px;
+  }
+  .presentation-description-down{
+    line-height: 28px;
+  }
+  .cv-button{
+    height: 40px;
+    width: 120px;
+  }
+  .section__icon{
+    width: 40px;
+  }
+  .section__icon img{
+    width: 100%;
+  }
+  .skill h4{
+    margin-top: -68px;
+    font-size: 16px;
+  }
+  .skill p{
+    font-size:55px;
+  }
+  .skill-1 h4,
+  .skill-2 h4,
+  .skill-3 h4{
+    margin-top: -56px;
+  }
+  .skill-4 h4,
+  .skill-5 h4{
+    margin-top: -60px;
+  }
+  .hooks-480 img{
+    width: 34px;
+  }
+  .division-wrapper-480{
+    padding-bottom: 200px;
+  }
+  .hooks-480{
+    padding-bottom: 171px;
+  }
+  .hook2{
+    margin-top:157px;
+  }
+  .hook3{
+    margin-top:87px;
+  }
+  .education-content h4{
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .education,
+  .languages,
+  .courses{
+    padding-top: 0;
+  }
+  .work-experience-title-wrapper{
+    margin-bottom: 20px;
+  }
+  .work-experience-2 .article-date{
+    padding: 0;
+  }
+  .article-date{
+    left:20px;
+  }
+
   .webdevelopment-courses,
   .design-courses,
   .other-courses {
@@ -11,6 +84,22 @@
 
   .courses-certificates h4 {
     font-size: 25px;
+  }
+  .hobbies{
+    padding: 0 10px;
+  }
+  .hobbies-icon{
+    width: 45px;
+  }
+  .hobbies-container {
+    padding: 0;
+  }
+  .hobbies-title{
+    margin-left:8px;
+    font-size: 25px;
+  }
+  .social-container a{
+    margin: 0 15px;
   }
 
 

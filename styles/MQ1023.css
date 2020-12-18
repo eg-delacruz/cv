@@ -15,6 +15,15 @@
   .skill p {
     font-size: 3em;
   }
+  .hero-image-container{
+    width: 220px;
+    margin-top: 10px;
+  }
+  .logo-container{
+    width: 110px;
+    align-self: center;
+    justify-self: center;
+  }
 
   .presentation-wrapper {
     padding-left: 63px;
@@ -22,6 +31,9 @@
 
   .presentation-description-up {
     margin-top: 30px;
+  }
+  .presentation-description-down{
+    padding-right: 0;
   }
 
   .education-content article {

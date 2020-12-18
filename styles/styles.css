@@ -81,6 +81,7 @@
 html{
   max-width: 100%;
   overflow-x: hidden;
+  /* estas dos lineas son necesarias para evitar scroll horizontal por animaciones */
 }
 
 body{
@@ -90,6 +91,7 @@ body{
   margin: 0;
   max-width: 100%;
   overflow-x: hidden;
+    /* estas dos lineas son necesarias para evitar scroll horizontal por animaciones */
 }
 
 .container{
@@ -176,7 +178,7 @@ h2{
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "hero-picture hero-logo"
                        "hero-picture hero-description";
-
+  padding: 20px 20px 40px;
 }
 .hero-image-wrapper{
   grid-area: hero-picture;
@@ -224,6 +226,9 @@ h2{
 .logo-container{
   grid-area: logo;
 }
+.logo{
+  width: 100%;
+}
 
 .presentation-title{
   grid-area: title;
@@ -261,6 +266,7 @@ h2{
 
 .presentation-description-down{
   line-height: 32px;
+  padding-right: 100px;
 }
 .cv-button{
   margin: 0 auto;
