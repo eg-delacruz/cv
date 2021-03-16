@@ -5,9 +5,11 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="/styles/normalize.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- Improves loading performance by loading google fonts parallel to wp load -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,700;1,300&family=Roboto:ital,wght@0,400;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
 
+  <!-- Generated favicon for different devices -->
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -23,12 +25,15 @@
   <!-- Animation stylesheets -->
   <link rel="stylesheet" href="styles/animation.css">
 
+  <!-- background color of tile application in windows -->
   <meta name="msapplication-TileColor" content="#da532c">
+  <!-- makes browser color match website -->
   <meta name="theme-color" content="#ffffff">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <!-- Esta última línea debe estar así para evitar scroll horizontal por animaciones  -->
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="description" content="Presentation CV and portfolio of Gerardo De La Cruz">
-  <meta name=”robots” content=”index, follow>
+  <!-- allows search engines to find this page-->
+  <meta name="robots" content="index" follow>
 
   <title>Gerardo De La Cruz</title>
 </head>
@@ -94,8 +99,8 @@
         <div class="hero-description">
           <p class="presentation-description-up fadeInLeft"><span>Never stop learning</span> - key attitude in nowadays rapidly changing environment.</p>
 
-          <p class="presentation-description-down fadeInLeft"> I am passionate about <strong>creating</strong> amazing things by interconnecting competences of different fields and generate powerful synergies. In the moment when my will and interests are
-            perfectly synchronized towards a valuable goal, my <strong>dedication</strong> remains astonishingly on focus, leading me to amazing outcomes in most instances. My <strong>international expertise</strong>, wide <strong>language
+          <p class="presentation-description-down fadeInLeft"> I am passionate about <strong>creating</strong> amazing things by interconnecting competences of different fields and generate powerful synergies. That moment when my will and interests
+            perfectly synchronize towards a valuable goal, my <strong>dedication</strong> remains astonishingly on focus, leading me to amazing outcomes in most instances. My <strong>international expertise</strong>, wide <strong>language
               proficiency</strong> and <strong>devouring curiosity</strong> make of me the perfect asset for any start-up like environment were coding and software development are the heart of operations.</p>
           <a class="cv-button button-grow" href="images/CV.png" target="_blank">Download CV</a>
         </div>
